@@ -4,12 +4,16 @@ import "../models/models.dart";
 import "./assets.dart";
 
 const Content sintelContent = Content(
-  name: "Sintel",
-  imageUrl: Assets.sintel,
-  titleImageUrl: Assets.sintelTitle,
-  videoUrl: Assets.sintelVideoUrl,
-  description:
-      'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  name: "Avengers",
+  imageUrl: Assets.avengers,
+  titleImageUrl: Assets.avengersTitle,
+  videoUrl: Assets.avengersVideoUrl,
+  description: """
+  Adrift in space with no food or water, Tony Stark sends
+  a message to Pepper Potts as his oxygen supply starts to dwindle. 
+  Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain
+  America and Bruce Banner must figure out a way to bring back 
+  their vanquished allies for an epic showdown with """,
 );
 
 List<Content> previews = const [
@@ -106,25 +110,24 @@ List<Content> previews = const [
 ];
 
 List<Content> myList = const [
-  Content(name: "Violet Evergarden", imageUrl: Assets.violetEvergarden),
-  Content(name: "How to Sell Drugs Online (Fast", imageUrl: Assets.htsdof),
-  Content(name: "Kakegurui", imageUrl: Assets.caroleAndTuesday),
-  Content(name: 'Carole and Tuesday', imageUrl: Assets.caroleAndTuesday),
-  Content(name: 'Black Mirror', imageUrl: Assets.blackMirror),
+  Content(name: "oo7", imageUrl: Assets.oo7),
+  Content(name: "Avatar", imageUrl: Assets.avatar),
+  Content(name: "Bee Keeper", imageUrl: Assets.beeKeeper),
+  Content(name: 'Dune', imageUrl: Assets.dune),
+  Content(name: 'Finding Nemo', imageUrl: Assets.findingNemo),
   Content(name: 'Violet Evergarden', imageUrl: Assets.violetEvergarden),
   Content(name: 'How to Sell Drugs Online (Fast)', imageUrl: Assets.htsdof),
-  Content(name: 'Kakegurui', imageUrl: Assets.kakegurui),
-  Content(name: 'Carole and Tuesday', imageUrl: Assets.caroleAndTuesday),
+  Content(name: "Avatar", imageUrl: Assets.avatar),
   Content(name: 'Black Mirror', imageUrl: Assets.blackMirror),
 ];
 
 List<Content> originals = const [
-  Content(name: 'Stranger Things', imageUrl: Assets.strangerThings),
-  Content(name: 'The Witcher', imageUrl: Assets.witcher),
-  Content(name: 'The Umbrella Academy', imageUrl: Assets.umbrellaAcademy),
-  Content(name: '13 Reasons Why', imageUrl: Assets.thirteenReasonsWhy),
-  Content(name: 'The End of the F***ing World', imageUrl: Assets.teotfw),
-  Content(name: 'Stranger Things', imageUrl: Assets.strangerThings),
+  Content(name: 'Stranger Things', imageUrl: Assets.godzilla),
+  Content(name: 'The Witcher', imageUrl: Assets.irishWish),
+  Content(name: 'The Umbrella Academy', imageUrl: Assets.madameWeb),
+  Content(name: '13 Reasons Why', imageUrl: Assets.rebelMoon),
+  Content(name: 'The End of the F***ing World', imageUrl: Assets.roadHouse),
+  Content(name: 'Stranger Things', imageUrl: Assets.findingNemo),
   Content(name: 'The Witcher', imageUrl: Assets.witcher),
   Content(name: 'The Umbrella Academy', imageUrl: Assets.umbrellaAcademy),
   Content(name: '13 Reasons Why', imageUrl: Assets.thirteenReasonsWhy),
@@ -132,13 +135,12 @@ List<Content> originals = const [
 ];
 
 List<Content> trending = const [
-  Content(name: 'Explained', imageUrl: Assets.explained),
-  Content(name: 'Avatar The Last Airbender', imageUrl: Assets.atla),
+  Content(name: "Avatar", imageUrl: Assets.avatar),
+  Content(name: 'The Umbrella Academy', imageUrl: Assets.madameWeb),
   Content(name: 'Tiger King', imageUrl: Assets.tigerKing),
-  Content(name: 'The Crown', imageUrl: Assets.crown),
+  Content(name: 'Dune', imageUrl: Assets.dune),
   Content(name: 'Dogs', imageUrl: Assets.dogs),
-  Content(name: 'Explained', imageUrl: Assets.explained),
-  Content(name: 'Avatar The Last Airbender', imageUrl: Assets.atla),
+  Content(name: "Avatar", imageUrl: Assets.avatar),
   Content(name: 'Tiger King', imageUrl: Assets.tigerKing),
   Content(name: 'The Crown', imageUrl: Assets.crown),
   Content(name: 'Dogs', imageUrl: Assets.dogs),

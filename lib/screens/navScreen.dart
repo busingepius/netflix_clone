@@ -3,6 +3,7 @@ import "package:flutter_bloc/flutter_bloc.dart";
 import "package:netflix_clone/cubits/appBar.dart";
 
 import "screens.dart";
+import "../widgets/widgets.dart";
 
 class NavScreen extends StatefulWidget {
   const NavScreen({super.key});
@@ -33,34 +34,34 @@ class _NavScreenState extends State<NavScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: BlocProvider<AppBarCubit>(
-        create: (context)=>AppBarCubit(),
-          child: _screens[_currentIndex],
-
+        create: (context) => AppBarCubit(),
+        child: _screens[_currentIndex],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.black,
-        items: _icons
-            .map(
-              (title, icon) => MapEntry(
-                title,
-                BottomNavigationBarItem(
-                  icon: Icon(icon),
-                  label: title,
-                ),
-              ),
+      bottomNavigationBar: !Responsive.isDesktop(context)
+          ? BottomNavigationBar(
+              type: BottomNavigationBarType.fixed,
+              backgroundColor: Colors.black,
+              items: _icons
+                  .map(
+                    (title, icon) => MapEntry(
+                      title,
+                      BottomNavigationBarItem(
+                        icon: Icon(icon),
+                        label: title,
+                      ),
+                    ),
+                  )
+                  .values
+                  .toList(),
+              currentIndex: _currentIndex,
+              selectedItemColor: Colors.white,
+              unselectedItemColor: Colors.grey,
+              selectedFontSize: 11.0,
+              unselectedFontSize: 11.0,
+              onTap: (index) => setState(() => _currentIndex = index),
             )
-            .values
-            .toList(),
-        currentIndex: _currentIndex,
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.grey,
-        selectedFontSize: 11.0,
-        unselectedFontSize: 11.0,
-        onTap: (index) => setState(() => _currentIndex = index),
-      ),
+          : const SizedBox.shrink(),
     );
   }
 }

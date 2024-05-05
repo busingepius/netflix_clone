@@ -5,9 +5,9 @@
 
     <!-- You can insert your own image assets here -->
     <!-- no need to set drawable from SDK 12 unless different from app icon-->
-<!--    <item>-->
-<!--        <bitmap-->
-<!--            android:gravity="center"-->
-<!--            android:src="@mipmap/ic_launcher" />-->
-<!--    </item>-->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/netflix_logo1" />
+    </item>
 </layer-list>

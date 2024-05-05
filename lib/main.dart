@@ -15,7 +15,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Netflix UI',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        // primarySwatch: Colors.blue,
+        // colorScheme: ColorScheme.fromSeed(
+        //   seedColor: Colors.white,
+        //   background: Colors.white,
+        //   error: Colors.red,
+        //   onTertiary: Colors.orange,
+        // ),
         visualDensity: VisualDensity.adaptivePlatformDensity,
         useMaterial3: true,
       ),

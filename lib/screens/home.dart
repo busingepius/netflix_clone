@@ -93,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.grey[850],
-        child: const Icon(Icons.cast),
+        child: const Icon(Icons.cast,color:Colors.white),
         onPressed: () => print("cast"),
       ),
     );
