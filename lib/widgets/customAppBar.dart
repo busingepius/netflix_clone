@@ -20,6 +20,7 @@ class CustomAppBar extends StatelessWidget {
       // 350 can be any appropriate number
       child: Responsive(
         mobile: _CustomAppBarMobile(),
+        tablet: _CustomAppBarDesktop(),
         desktop: _CustomAppBarDesktop(),
       ),
     );

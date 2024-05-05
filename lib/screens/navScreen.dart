@@ -38,7 +38,7 @@ class _NavScreenState extends State<NavScreen> {
         create: (context) => AppBarCubit(),
         child: _screens[_currentIndex],
       ),
-      bottomNavigationBar: !Responsive.isDesktop(context)
+      bottomNavigationBar: Responsive.isMobile(context)
           ? BottomNavigationBar(
               type: BottomNavigationBarType.fixed,
               backgroundColor: Colors.black,
