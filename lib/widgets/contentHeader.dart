@@ -105,6 +105,7 @@ class _ContentHeaderDesktopState extends State<_ContentHeaderDesktop> {
         (_) => setState(() {}),
       )
       ..play()
+      ..setLooping(true)
       ..setVolume(0);
   }
 
@@ -124,13 +125,28 @@ class _ContentHeaderDesktopState extends State<_ContentHeaderDesktop> {
         alignment: Alignment.bottomLeft,
         children: [
           AspectRatio(
-              aspectRatio: _videoPlayerController.value.isInitialized
-                  ? _videoPlayerController.value.aspectRatio
-                  : 2.344,
-              child: _videoPlayerController.value.isInitialized
-                  ? VideoPlayer((_videoPlayerController))
-                  : Image.asset(widget.featuredContent.imageUrl,
-                      fit: BoxFit.cover)),
+            aspectRatio: _videoPlayerController.value.isInitialized
+                ? _videoPlayerController.value.aspectRatio
+                : 2.344,
+            child: _videoPlayerController.value.isInitialized
+                ? VideoPlayer((_videoPlayerController))
+                : Image.asset(widget.featuredContent.imageUrl,
+                    fit: BoxFit.cover),
+          ),
+          AspectRatio(
+            aspectRatio: _videoPlayerController.value.isInitialized
+                ? _videoPlayerController.value.aspectRatio
+                : 2.344,
+            child: Container(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Colors.black, Colors.transparent],
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.topCenter,
+                ),
+              ),
+            ),
+          ),
           Container(
             height: 500,
             decoration: const BoxDecoration(
@@ -189,12 +205,14 @@ class _ContentHeaderDesktopState extends State<_ContentHeaderDesktop> {
                                       .transparent; // Change this to desired press color
                             },
                           ),
-                          shape: MaterialStateProperty.all<
-                                  RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8),
-                                  side: const BorderSide(color: Colors.transparent) ,// Border color and width
-                                  ))),
+                          shape:
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                            side: const BorderSide(
+                                color: Colors
+                                    .transparent), // Border color and width
+                          ))),
                       label: const Text(
                         "More Info",
                         style: TextStyle(
