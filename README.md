@@ -7,8 +7,8 @@ A clone of the home page and navigation of netflix
 This project is built on flutter  SDK
 
 #### Images
-- ![alt text](https://github.com/busingepius/netflix_clone/blob/main/screenShots/Screenshot_mobile_1.png?raw=true)
-- ![alt text](https://github.com/busingepius/netflix_clone/blob/main/screenShots/Screenshot_mobile_1.png?raw=true)
+- ![image one](https://github.com/busingepius/netflix_clone/blob/main/screenShots/Screenshot_mobile_1.png?raw=true)
+- [image two]![alt text](https://github.com/busingepius/netflix_clone/blob/main/screenShots/Screenshot_mobile_1.png?raw=true)
 - ![alt text](https://github.com/busingepius/netflix_clone/blob/main/screenShots/Screenshot_mobile_1.png?raw=true)
 
 #### Video
